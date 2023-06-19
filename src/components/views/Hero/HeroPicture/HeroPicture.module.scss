@@ -1,0 +1,14 @@
+@import '../../../../styles/settings.scss';
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  // padding: 0 ($base-size * 2);
+  max-height: 250px;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+}
