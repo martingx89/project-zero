@@ -1,3 +1,5 @@
-const initialState = {};
+const initialState = {
+  images: [],
+};
 
 export default initialState;
