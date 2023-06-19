@@ -7,7 +7,7 @@ const NavBar = () => {
     <>
       <Hero />
       <Navbar variant='dark' expand='lg' bg='primary'>
-        <Navbar.Brand href='/'>Home</Navbar.Brand>
+        <Navbar.Brand href='/'>LOGO</Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav'></Navbar.Toggle>
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='ms-auto'>
