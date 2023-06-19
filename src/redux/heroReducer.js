@@ -14,7 +14,7 @@ export const getData = (payload) => ({ type: GET_DATA, payload });
 
 export const fetchImages = () => {
   return (dispatch) => {
-    fetch(`${API_URL}/`)
+    fetch(`${API_URL}/images`)
       .then((res) => res.json())
       .then((images) => dispatch(getData(images)));
   };

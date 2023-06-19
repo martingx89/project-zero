@@ -6,11 +6,12 @@ import About from './components/pages/About/About';
 import NotFound from './components/pages/NotFound/NotFound';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
+import { fetchImages } from './redux/heroReducer';
 
 const App = () => {
   const dispatch = useDispatch();
 
-  useEffect(() => dispatch());
+  useEffect(() => dispatch(fetchImages(), [dispatch]));
   return (
     <>
       <main>
