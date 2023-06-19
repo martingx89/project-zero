@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <>
       <Hero />
-      <Navbar variant='dark' expand='lg' bg='primary'>
+      <Navbar variant='light' expand='lg' bg='white'>
         <Navbar.Brand href='/'>LOGO</Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav'></Navbar.Toggle>
         <Navbar.Collapse id='basic-navbar-nav'>
