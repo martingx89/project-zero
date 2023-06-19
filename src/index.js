@@ -6,15 +6,12 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/normalize.scss';
 import './styles/global.scss';
-import { Container } from 'react-bootstrap';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Container>
-        <App />
-      </Container>
+      <App />
     </Provider>
   </React.StrictMode>
 );
