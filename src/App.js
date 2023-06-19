@@ -4,8 +4,13 @@ import NavBar from './components/views/NavBar/NavBar';
 import Home from './components/pages/Home/Home';
 import About from './components/pages/About/About';
 import NotFound from './components/pages/NotFound/NotFound';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 
 const App = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => dispatch());
   return (
     <>
       <main>
