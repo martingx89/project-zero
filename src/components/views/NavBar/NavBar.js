@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <Container fluid="md">
+    <Container fluid='md'>
       <Hero />
       <Navbar variant='light' expand='lg' bg='white'>
         <Navbar.Brand href='/'>LOGO</Navbar.Brand>
