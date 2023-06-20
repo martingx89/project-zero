@@ -8,6 +8,7 @@ import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchCards } from './redux/homeReducer';
 import Footer from './components/views/Footer/Footer';
+import Card from './components/pages/Card/Card';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -20,6 +21,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
+          <Route path='/card/:id' element={<Card />}></Route>
           <Route path='/*' element={<NotFound />} />
         </Routes>
       </Container>
