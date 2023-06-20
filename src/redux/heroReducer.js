@@ -1,6 +1,6 @@
 import { API_URL } from '../config';
 
-import { createActionName } from '../utils/createAtionName';
+import { createActionName } from '../utils/createActionName';
 
 // selectors
 export const getAllImages = (state) => state.images;
