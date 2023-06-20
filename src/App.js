@@ -12,7 +12,7 @@ import Footer from './components/views/Footer/Footer';
 const App = () => {
   const dispatch = useDispatch();
 
-  useEffect(() => dispatch(fetchCards(), [dispatch]));
+  // useEffect(() => dispatch(fetchCards(), [dispatch]));
   return (
     <main>
       <NavBar />
