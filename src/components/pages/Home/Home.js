@@ -52,6 +52,13 @@ const Home = () => {
             <Accordion.Header>{card.title}</Accordion.Header>
             <Accordion.Body>
               <Stack gap={3}>
+                <div>
+                  <img
+                    alt={card.title}
+                    // eslint-disable-next-line no-undef
+                    src={`${process.env.PUBLIC_URL}/images/map/${card.thumbnail}.png`}
+                  />
+                </div>
                 {card.descriptionShort}
                 <Link className='ms-auto' to={`/card/${card.id}`}>
                   <Button variant='info'>Więcej informacji</Button>
