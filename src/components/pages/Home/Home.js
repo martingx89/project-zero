@@ -5,7 +5,7 @@ import { getAllCards } from '../../../redux/homeReducer';
 
 const Home = () => {
   const cards = useSelector(getAllCards);
-  console.log(cards);
+  // console.log(cards);
 
   return (
     <>
@@ -48,12 +48,12 @@ const Home = () => {
       </Carousel>
       <Accordion defaultActiveKey='1' flush>
         {cards.map((card) => (
-          <Accordion.Item eventKey={card.cardId}>
+          <Accordion.Item eventKey={card.id} key={card.id}>
             <Accordion.Header>{card.title}</Accordion.Header>
             <Accordion.Body>
               <Stack gap={3}>
                 {card.descriptionShort}
-                <Link className='ms-auto' to={`/card/${card.cardId}`}>
+                <Link className='ms-auto' to={`/card/${card.id}`}>
                   <Button variant='info'>Więcej informacji</Button>
                 </Link>
               </Stack>

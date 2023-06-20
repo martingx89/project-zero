@@ -1,15 +1,15 @@
 import { useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
 import { getCardById } from '../../../redux/cardReducer';
 import PageTitle from '../../common/PageTitle/PageTitle';
 
 const Card = () => {
-  const cardId = useSelector(getCardById);
-  console.log(cardId);
+  const { id } = useParams();
+  const selectedCard = useSelector((state) => getCardById(state, id));
+  console.log(selectedCard);
   return (
     <>
-      {cardId.map((card) => (
-        <PageTitle>{card.title}</PageTitle>
-      ))}
+      <PageTitle>{selectedCard.title}</PageTitle>
     </>
   );
 };
