@@ -6,13 +6,13 @@ import About from './components/pages/About/About';
 import NotFound from './components/pages/NotFound/NotFound';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { fetchImages } from './redux/heroReducer';
+import { fetchCards } from './redux/homeReducer';
 import Footer from './components/views/Footer/Footer';
 
 const App = () => {
   const dispatch = useDispatch();
 
-  useEffect(() => dispatch(fetchImages(), [dispatch]));
+  useEffect(() => dispatch(fetchCards(), [dispatch]));
   return (
     <main>
       <NavBar />
