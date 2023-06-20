@@ -54,7 +54,7 @@ const Home = () => {
               <Stack gap={3}>
                 {card.descriptionShort}
                 <Link className='ms-auto' to={`/card/${card.cardId}`}>
-                  <Button variant='info'>Więcej informacj</Button>
+                  <Button variant='info'>Więcej informacji</Button>
                 </Link>
               </Stack>
             </Accordion.Body>
