@@ -1,6 +1,11 @@
+import { useSelector } from 'react-redux';
 import { Carousel, Accordion } from 'react-bootstrap';
+import { getAllCards } from '../../../redux/homeReducer';
 
 const Home = () => {
+  const cards = useSelector(getAllCards);
+  console.log(cards);
+
   return (
     <>
       <Carousel>
