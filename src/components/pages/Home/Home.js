@@ -47,7 +47,7 @@ const Home = () => {
       </Carousel>
       <Accordion defaultActiveKey='1' flush>
         {cards.map((card) => (
-          <Accordion.Item eventKey={card.id}>
+          <Accordion.Item eventKey={card.cardId}>
             <Accordion.Header>{card.title}</Accordion.Header>
             <Accordion.Body>{card.descriptionShort}</Accordion.Body>
           </Accordion.Item>
