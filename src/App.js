@@ -7,6 +7,7 @@ import NotFound from './components/pages/NotFound/NotFound';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchImages } from './redux/heroReducer';
+import Footer from './components/views/Footer/Footer';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -23,6 +24,7 @@ const App = () => {
             <Route path='/*' element={<NotFound />} />
           </Routes>
         </Container>
+        <Footer />
       </main>
     </>
   );
