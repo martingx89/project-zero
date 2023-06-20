@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import { Carousel, Accordion, Button, Stack } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { getAllCards } from '../../../redux/homeReducer';
 
 const Home = () => {
@@ -52,7 +53,9 @@ const Home = () => {
             <Accordion.Body>
               <Stack gap={3}>
                 {card.descriptionShort}
-                <Button variant='info'>Więcej informacj</Button>
+                <Link className='ms-auto' to={`/card/${card.cardId}`}>
+                  <Button variant='info'>Więcej informacj</Button>
+                </Link>
               </Stack>
             </Accordion.Body>
           </Accordion.Item>
