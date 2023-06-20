@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { Carousel, Accordion } from 'react-bootstrap';
+import { Carousel, Accordion, Button, Stack } from 'react-bootstrap';
 import { getAllCards } from '../../../redux/homeReducer';
 
 const Home = () => {
@@ -49,7 +49,12 @@ const Home = () => {
         {cards.map((card) => (
           <Accordion.Item eventKey={card.cardId}>
             <Accordion.Header>{card.title}</Accordion.Header>
-            <Accordion.Body>{card.descriptionShort}</Accordion.Body>
+            <Accordion.Body>
+              <Stack gap={3}>
+                {card.descriptionShort}
+                <Button variant='info'>Więcej informacj</Button>
+              </Stack>
+            </Accordion.Body>
           </Accordion.Item>
         ))}
       </Accordion>
