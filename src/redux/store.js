@@ -1,10 +1,10 @@
 import { createStore, combineReducers, compose, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import initialState from './initialState';
-import heroReducer from './heroReducer';
+import homeReducer from './homeReducer';
 
 const subreducers = {
-  images: heroReducer,
+  cards: homeReducer,
 };
 
 const reducer = combineReducers(subreducers);

@@ -1,9 +1,11 @@
 {
-  "images": [
+  "cards": [
     {
-      "id": 1,
-      "title": "lesko",
-      "type": "hero"
+      "cardId": 1,
+      "title": "track 1",
+      "descriptionShort": "short description",
+      "descriptionExtend": "more informations",
+      "level": 1
     }
   ]
 }
