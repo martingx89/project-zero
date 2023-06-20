@@ -1,10 +1,10 @@
 import Hero from '../Hero/Hero';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <Container fluid='md'>
+    <>
       <Hero />
       <Navbar variant='light' expand='lg' bg='white'>
         <Navbar.Brand href='/'>LOGO</Navbar.Brand>
@@ -24,7 +24,7 @@ const NavBar = () => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-    </Container>
+    </>
   );
 };
 
