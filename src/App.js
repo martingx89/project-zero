@@ -14,19 +14,17 @@ const App = () => {
 
   useEffect(() => dispatch(fetchImages(), [dispatch]));
   return (
-    <>
-      <main>
-        <NavBar />
-        <Container fluid='md'>
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/*' element={<NotFound />} />
-          </Routes>
-        </Container>
-        <Footer />
-      </main>
-    </>
+    <main>
+      <NavBar />
+      <Container fluid='md'>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/*' element={<NotFound />} />
+        </Routes>
+      </Container>
+      <Footer />
+    </main>
   );
 };
 
