@@ -1,5 +1,4 @@
 import { API_URL } from '../config';
-
 import { createActionName } from '../utils/createActionName';
 
 // selectors
