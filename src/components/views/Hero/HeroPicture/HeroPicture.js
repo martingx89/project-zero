@@ -7,7 +7,7 @@ const HeroPicture = () => {
         className={styles.image}
         alt='lesko'
         // eslint-disable-next-line no-undef
-        src={`${process.env.PUBLIC_URL}/images/hero/hero_lesko_01jpg`}
+        src={`${process.env.PUBLIC_URL}/images/hero/hero_lesko_01.jpg`}
       />
     </div>
   );
