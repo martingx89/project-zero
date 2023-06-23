@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { getCardById } from '../../../redux/cardReducer';
 import PageTitle from '../../common/PageTitle/PageTitle';
+import LevelIndcator from '../../features/LevelIndicator';
 
 const Card = () => {
   const { id } = useParams();
@@ -10,6 +11,7 @@ const Card = () => {
   return (
     <>
       <PageTitle>{selectedCard.title}</PageTitle>
+      <LevelIndcator>{selectedCard.params.level}</LevelIndcator>
     </>
   );
 };
