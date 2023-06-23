@@ -1,6 +1,8 @@
 .box {
   width: 25px;
   height: 25px;
+  border: solid 1px #333;
+  text-align: center;
 
   &.colorGreen {
     background: #2ecc71;
