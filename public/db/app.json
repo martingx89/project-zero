@@ -6,9 +6,9 @@
       "descriptionShort": "Piękna malownicza trasa, niedaleko Sinych Wirów",
       "descriptionExtend": "Jedną z ciekawych tras rowerowych w okolicy Sine wiry jest ścieżka wzdłuż rzeki Sine. Jest to łatwa i malownicza trasa, która prowadzi przez kilka wiosek i zabytków. Można podziwiać piękne widoki na góry i lasy, a także zobaczyć mosty, kościoły i zamki. Trasa ma około 20 km długości i jest dobrze oznakowana. Można ją pokonać w około dwie godziny, zależnie od tempa i liczby postojów.",
       "thumbnail": "map_01",
-      "level": 3,
       "params": {
-        "asphalt": "70 %",
+        "level": 3,
+        "asphalt": "70%",
         "gravel": "30%"
       }
     },
@@ -17,14 +17,22 @@
       "title": "track 2",
       "descriptionShort": "short description",
       "descriptionExtend": "more informations",
-      "level": 1
+      "params": {
+        "level": 2,
+        "asphalt": "70%",
+        "gravel": "30%"
+      }
     },
     {
       "id": "3",
       "title": "track 3",
       "descriptionShort": "short description",
       "descriptionExtend": "more informations",
-      "level": 1
+      "params": {
+        "level": 1,
+        "asphalt": "70%",
+        "gravel": "30%"
+      }
     }
   ]
 }
