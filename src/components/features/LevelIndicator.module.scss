@@ -4,11 +4,20 @@
   border: solid 1px #333;
   text-align: center;
 
-  &.colorGreen {
+  &.green {
     background: #2ecc71;
   }
+  &.yellow {
+    background: #dffb0c;
+  }
+  &.orange {
+    background: #cc802e;
+  }
+  &.red {
+    background: #cc2e2e;
+  }
 
-  &.colorRed {
-    background: #e74c3c;
+  &.black {
+    background: #000000;
   }
 }

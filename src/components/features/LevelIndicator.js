@@ -1,14 +1,14 @@
+import clsx from 'clsx';
 import { colorSwitcher } from '../../utils/colorSwitcher';
 import styles from './LevelIndicator.module.scss';
 
 const LevelIndicator = (props) => {
   const currentColor = colorSwitcher(props.children);
-
-  console.log('dupa', currentColor);
+  console.log(currentColor);
 
   return (
     <>
-      <div className={styles.box}>{props.children}</div>
+      <div className={clsx(styles.box, styles[`${currentColor}`])}>{props.children}</div>
     </>
   );
 };
