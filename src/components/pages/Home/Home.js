@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux';
 import { Carousel, Accordion, Button, Stack } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { getAllCards } from '../../../redux/homeReducer';
+import LevelIndcator from '../../features/LevelIndicator';
 
 const Home = () => {
   const cards = useSelector(getAllCards);
@@ -49,7 +50,11 @@ const Home = () => {
       <Accordion defaultActiveKey='0' flush>
         {cards.map((card) => (
           <Accordion.Item eventKey={card.id} key={card.id}>
-            <Accordion.Header>{card.title}</Accordion.Header>
+            <Accordion.Header>
+              <div>
+                {card.title} <LevelIndcator>{card.params.level}</LevelIndcator>
+              </div>
+            </Accordion.Header>
             <Accordion.Body>
               <Stack gap={3}>
                 <div>
