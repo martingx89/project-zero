@@ -9,7 +9,8 @@
       "params": {
         "level": 3,
         "asphalt": "70%",
-        "gravel": "30%"
+        "gravel": "30%",
+        "distance": "30 km"
       }
     },
     {

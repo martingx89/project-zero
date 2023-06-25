@@ -53,16 +53,20 @@ const Home = () => {
           <Accordion.Item eventKey={card.id} key={card.id}>
             <Accordion.Header>
               <Container as='div'>
-                <Row>
-                  <Col sm={4}>
+                <Row className='justify-content-md-center'>
+                  <Col sm={2}>
                     <Figure>
                       <Figure.Image
                         width={250}
+                        height={250}
                         alt={card.title}
                         src={`${process.env.PUBLIC_URL}/images/map/${card.thumbnail}.png`}></Figure.Image>
                     </Figure>
                   </Col>
-                  <Col sm={6}>{card.title}</Col>
+                  <Col sm={8}>
+                    {card.title}
+                    <Col>{card.params.distance}</Col>
+                  </Col>
                   <Col sm={2}>
                     <LevelIndcator>{card.params.level}</LevelIndcator>
                   </Col>
