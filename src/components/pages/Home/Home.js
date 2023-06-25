@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { Carousel, Accordion, Button, Stack } from 'react-bootstrap';
+import { Carousel, Accordion, Button, Stack, Container, Row, Col, Figure } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { getAllCards } from '../../../redux/homeReducer';
 import LevelIndcator from '../../features/LevelIndicator';
@@ -47,23 +47,31 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+
       <Accordion defaultActiveKey='0' flush>
         {cards.map((card) => (
           <Accordion.Item eventKey={card.id} key={card.id}>
             <Accordion.Header>
-              <div>
-                {card.title} <LevelIndcator>{card.params.level}</LevelIndcator>
-              </div>
+              <Container as='div'>
+                <Row>
+                  <Col sm={4}>
+                    <Figure>
+                      <Figure.Image
+                        width={250}
+                        alt={card.title}
+                        src={`${process.env.PUBLIC_URL}/images/map/${card.thumbnail}.png`}></Figure.Image>
+                    </Figure>
+                  </Col>
+                  <Col sm={6}>{card.title}</Col>
+                  <Col sm={2}>
+                    <LevelIndcator>{card.params.level}</LevelIndcator>
+                  </Col>
+                </Row>
+              </Container>
             </Accordion.Header>
             <Accordion.Body>
               <Stack gap={3}>
-                <div>
-                  <img
-                    alt={card.title}
-                    // eslint-disable-next-line no-undef
-                    src={`${process.env.PUBLIC_URL}/images/map/${card.thumbnail}.png`}
-                  />
-                </div>
+                <div></div>
                 {card.descriptionShort}
                 <Link className='ms-auto' to={`/card/${card.id}`}>
                   <Button variant='info'>Więcej informacji</Button>
