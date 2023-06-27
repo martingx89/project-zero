@@ -1,0 +1,23 @@
+.box {
+  width: 25px;
+  height: 25px;
+  border: solid 1px #333;
+  text-align: center;
+
+  &.green {
+    background: #2ecc71;
+  }
+  &.yellow {
+    background: #dffb0c;
+  }
+  &.orange {
+    background: #cc802e;
+  }
+  &.red {
+    background: #cc2e2e;
+  }
+
+  &.black {
+    background: #000000;
+  }
+}

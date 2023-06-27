@@ -1,0 +1,9 @@
+@import '../../../styles/settings.scss';
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: $color-light;
+  font-family: $font-text;
+}
