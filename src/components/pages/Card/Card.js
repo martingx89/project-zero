@@ -1,15 +1,23 @@
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { getCardById } from '../../../redux/cardReducer';
+import { Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import PageTitle from '../../common/PageTitle/PageTitle';
 
 const Card = () => {
   const { id } = useParams();
   const selectedCard = useSelector((state) => getCardById(state, id));
-  console.log(selectedCard);
+  const navigate = useNavigate();
+  // console.log(selectedCard);
+  const returnHandle = (e) => {
+    e.preventDefault();
+    navigate('/');
+  };
   return (
     <>
       <PageTitle>{selectedCard.title}</PageTitle>
+      <Button onClick={returnHandle}>Back</Button>
     </>
   );
 };
