@@ -4,6 +4,7 @@ import { getCardById } from '../../../redux/cardReducer';
 import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import PageTitle from '../../common/PageTitle/PageTitle';
+import Map from '../../views/Map/Map';
 
 const Card = () => {
   const { id } = useParams();
@@ -17,6 +18,7 @@ const Card = () => {
   return (
     <>
       <PageTitle>{selectedCard.title}</PageTitle>
+      <Map></Map>
       <Button onClick={returnHandle}>Back</Button>
     </>
   );
